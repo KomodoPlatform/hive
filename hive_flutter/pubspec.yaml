@@ -3,6 +3,7 @@ description: Extension for Hive. Makes it easier to use Hive in Flutter apps.
 version: 1.1.0
 homepage: https://github.com/hivedb/hive/tree/master/hive_flutter
 documentation: https://docs.hivedb.dev/
+publish_to: "none"
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
@@ -11,7 +12,12 @@ dependencies:
   flutter:
     sdk: flutter
 
-  hive: ^2.2.1
+  hive:
+    git:
+      url: https://github.com/KomodoPlatform/hive.git
+      path: hive/
+      ref: 470473ffc1ba39f6c90f31ababe0ee63b76b69fe #2.2.3
+
   path_provider: ^2.0.10
   path: ^1.8.2
 
